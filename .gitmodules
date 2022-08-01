@@ -1,0 +1,3 @@
+[submodule "broker-bazel/thirdparty/bazelisk"]
+	path = broker-bazel/thirdparty/bazelisk
+	url = https://github.com/bazelbuild/bazelisk.git

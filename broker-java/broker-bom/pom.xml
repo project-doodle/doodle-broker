@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>doodle.broker</groupId>
+    <artifactId>broker</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>broker-bom</artifactId>
+  <packaging>pom</packaging>
+
+  <properties>
+    <dep.spring-boot.version>2.5.1</dep.spring-boot.version>
+    <dep.guava.version>30.0-jre</dep.guava.version>
+    <dep.agrona.version>1.11.0</dep.agrona.version>
+    <dep.roaringbitmap.version>0.9.15</dep.roaringbitmap.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>${dep.spring-boot.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${dep.guava.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.agrona</groupId>
+        <artifactId>agrona</artifactId>
+        <version>${dep.agrona.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.roaringbitmap</groupId>
+        <artifactId>RoaringBitmap</artifactId>
+        <version>${dep.roaringbitmap.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>doodle.broker</groupId>
+        <artifactId>broker-client</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>doodle.broker</groupId>
+        <artifactId>broker-starter-client</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>doodle.broker</groupId>
+        <artifactId>broker-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>doodle.broker</groupId>
+        <artifactId>broker-server</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>doodle.broker</groupId>
+        <artifactId>broker-starter-server</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+</project>

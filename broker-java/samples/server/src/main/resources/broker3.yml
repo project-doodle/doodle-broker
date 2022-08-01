@@ -1,0 +1,11 @@
+doodle.rsocket.broker.server:
+  brokerId: 00000000-0000-0000-0000-00000003
+  proxy:
+    enabled: true
+    uri: tcp://localhost:8003
+  cluster:
+    uri: tcp://localhost:9003
+    nodes:
+      - proxy: tcp://localhost:8001
+        cluster: tcp://localhost:9001
+

@@ -1,0 +1,14 @@
+site_name: 'Broker'
+repo_name: 'broker'
+edit_uri: 'edit/main/docs'
+site_url: 'https://project-doodle.github.io/broker'
+repo_url: 'https://github.com/project-doodle/broker'
+site_author: 'Tingyan Shen'
+
+copyright: 'Copyright &copy; 2022-present Doodle. All rights reserved.'
+
+theme:
+  name: 'material'
+
+nav:
+  - Home: 'README.md'

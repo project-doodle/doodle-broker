@@ -1,0 +1,9 @@
+doodle.rsocket.broker.client:
+  data-mime-type: application/x-protobuf
+  serviceName: protobuf-app
+  tags:
+    instance-name: protobuf-app
+    instance-type: sample
+  broker:
+    uri: tcp://localhost:8001
+    brokerId: 00000000-0000-0000-0000-00000001

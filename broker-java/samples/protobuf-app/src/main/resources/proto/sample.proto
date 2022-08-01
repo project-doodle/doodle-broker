@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package sample;
+
+option java_package = "doodle.sample";
+option java_outer_classname = "SampleProto";
+option java_multiple_files = true;
+
+// A simple request message type for test.
+message SimpleRequest {
+  // An optional string message for test.
+  string requestMessage = 1;
+}
+
+// A simple response message type for test.
+message SimpleResponse {
+  // An optional string message for test.
+  string responseMessage = 1;
+}
